@@ -1,6 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
 import { useRef } from 'react';
 
 import Navbar from './components/Navbar';
@@ -60,6 +59,7 @@ function App() {
 					<Section5 />
 				</div>
 			</div>
+
 		</div>
 	);
 }
