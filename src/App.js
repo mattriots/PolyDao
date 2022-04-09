@@ -6,8 +6,8 @@ import Navbar
 function App() {
  
   return (
-		<div>
-      <Navbar />
+		<div className="container mx-auto bg-[#121E2A]">
+			<Navbar />
 			<Routes>
 				{/* <Route path="/" element={<Home />} />
 				<Route path="about" element={<About />} /> */}
