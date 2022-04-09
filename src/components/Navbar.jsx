@@ -1,25 +1,41 @@
-import React from 'react'
 import { InitSwAuth } from '@skill-wallet/auth';
 import { useEffect } from 'react';
-import logo from '../assets/cp-logo.png'
-  
+import logo from '../components/assets/cp-logo.png';
 
-function Navbar() {
-
-    useEffect(() => {
-    InitSwAuth();
-}, []);
-  return (
+function Navbar({
+	scrollToSection,
+	section0,
+	section1,
+	seection2,
+	section3,
+	section4,
+	section5,
+}) {
+	useEffect(() => {
+		InitSwAuth();
+	}, []);
+	return (
 		<>
 			<div className="flex flex-row justify-between items-center bg-[#172231] h-20 pl-10 pt-2 pr-10 font-poppins text-sm">
 				<div className="flex flex-row text-white">
 					<img src={logo} className="h-16" alt="this is a cal poly logo " />
 					<ul className="flex flex-row items-center justify-center text-white">
-						<li className="pl-5 hover:text-[#ECC76D] cursor-pointer ">About</li>
-						<li className="pl-5 hover:text-[#ECC76D] cursor-pointer">
+						<li
+							onClick={() => scrollToSection(section1)}
+							className="pl-5 hover:text-[#ECC76D] cursor-pointer "
+						>
+							About
+						</li>
+						<li
+							onClick={() => scrollToSection(section3)}
+							className="pl-5 hover:text-[#ECC76D] cursor-pointer"
+						>
 							Community
 						</li>
-						<li className="pl-5 hover:text-[#ECC76D] cursor-pointer">
+						<li
+							onClick={() => scrollToSection(section5)}
+							className="pl-5 hover:text-[#ECC76D] cursor-pointer"
+						>
 							Participate
 						</li>
 					</ul>
@@ -33,4 +49,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar
+export default Navbar;
