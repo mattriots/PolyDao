@@ -1,4 +1,5 @@
 import React from 'react'
+import Section_0 from "../components/Section_0.jsx";
 import Section_1 from "../components/Section_1.jsx";
 import Section_2 from "../components/Section_2.jsx";
 import Section_3 from "../components/Section_3.jsx";
@@ -7,7 +8,11 @@ import Section_5 from "../components/Section_5.jsx";
 
 function Home() {
   return (
-    <div>THIS IS THE HOME PAGE FOR DOING ALL THE WORK
+    <div>
+      {/* THIS IS THE HOME PAGE FOR DOING ALL THE WORK */}
+      <div className='flex justify-center'>
+        <Section_0/>
+      </div>
       <div className='flex justify-center'>
         <Section_1/>
       </div>
