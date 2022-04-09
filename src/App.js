@@ -11,6 +11,7 @@ function App() {
   
     <div>
         <sw-auth partner-key="d598a1d4a3688ef091006511966dfae96961b60f" use-dev='true'></sw-auth>
+        //Making some changes
     </div>
   );
 }
